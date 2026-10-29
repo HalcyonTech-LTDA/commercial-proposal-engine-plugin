@@ -1,0 +1,7 @@
+.DS_Store
+*.log
+auditoria*.txt
+propostas_comerciais/
+scratch/
+.scratch/
+tmp/
