@@ -1,0 +1,18 @@
+{
+  "name": "commercial-proposal-engine-plugin",
+  "version": "1.0.0",
+  "description": "Pipeline agêntico nativo em arquitetura Generator-Critic (Reflexion) para geração de Propostas Comerciais Executivas de Engenharia de Software a partir de dossiês técnicos de pré-venda.",
+  "author": "Engineering Architecture Office",
+  "skills": [
+    "skills/commercial-proposal-orchestrator"
+  ],
+  "agents": [
+    "agents/proposal-ingestion-planner.md",
+    "agents/executive-proposal-generator.md",
+    "agents/deal-redteam-critic.md"
+  ],
+  "rules": [
+    "rules/commercial-persuasion-standards.md",
+    "rules/contractual-anchoring-safeguards.md"
+  ]
+}
