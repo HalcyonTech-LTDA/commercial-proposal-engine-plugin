@@ -2,17 +2,22 @@
   "name": "commercial-proposal-engine-plugin",
   "version": "1.0.0",
   "description": "Pipeline agêntico nativo em arquitetura Generator-Critic (Reflexion) para geração de Propostas Comerciais Executivas de Engenharia de Software a partir de dossiês técnicos de pré-venda.",
-  "author": "Engineering Architecture Office",
+  "author": {
+    "name": "Halcyon Tech",
+    "url": "https://github.com/HalcyonTech-LTDA"
+  },
   "skills": [
     "skills/commercial-proposal-orchestrator"
   ],
-  "agents": [
-    "agents/proposal-ingestion-planner.md",
-    "agents/executive-proposal-generator.md",
-    "agents/deal-redteam-critic.md"
-  ],
-  "rules": [
-    "rules/commercial-persuasion-standards.md",
-    "rules/contractual-anchoring-safeguards.md"
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "displayName": "Commercial Proposal Engine Plugin",
+  "homepage": "https://github.com/HalcyonTech-LTDA/commercial-proposal-engine-plugin",
+  "repository": "https://github.com/HalcyonTech-LTDA/commercial-proposal-engine-plugin",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Execute o pipeline multi-agente de proposta comercial a partir do dossiê técnico",
+    "Audite a viabilidade comercial, margem de risco e premissas contratuais da proposta",
+    "Estruture a proposta comercial consolidada com marcos de faturamento e cronograma"
   ]
 }
