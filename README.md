@@ -1,18 +1,36 @@
 <div align="center">
 
-# Commercial Proposal Engine Plugin
+# Commercial Proposal Engine Plugin Plugin
 ### Global Generator-Critic (Reflexion) Pipeline for Enterprise Software Engineering Proposals
 
 [![Antigravity Plugin](https://img.shields.io/badge/Antigravity-Plugin%20v1.0.0-4F46E5.svg)](https://antigravity.google)
-[![Architecture: Generator-Critic Reflexion](https://img.shields.io/badge/Architecture-Generator--Critic%20(Reflexion)-EC4899.svg)](#4-generator-critic-reflexion-architecture)
 [![License: MIT](https://img.shields.io/badge/License-MIT-10B981.svg)](./LICENSE)
-[![Zero-Slides Enforced](https://img.shields.io/badge/Output-Executive%20Markdown%20Narrative-F59E0B.svg)](#2-the-6-executive-pillars--contractual-anchoring)
+[![Organization](https://img.shields.io/badge/Organization-HalcyonTech--LTDA-black.svg)](https://github.com/HalcyonTech-LTDA)
 
 <p align="center">
-  <b>Transform pre-sales engineering dossiers (<code>DOSSIE_TECNICO_PRE_PROPOSTA.md</code>) into persuasive, C-Level & CTO-ready Commercial Proposals (<code>PROPOSTA_COMERCIAL_EXECUTIVA.md</code>) that seamlessly anchor binding contract annexes.</b>
+  <b>Pipeline agêntico nativo em arquitetura Generator-Critic (Reflexion) para geração de Propostas Comerciais Executivas de Engenharia de Software a partir de dossiês técnicos de pré-venda.</b>
 </p>
 
 </div>
+
+---
+
+## Installation & Verification
+
+### Antigravity CLI (`agy`)
+
+Install directly into your Antigravity environment via the CLI:
+
+```bash
+agy plugin install https://github.com/HalcyonTech-LTDA/commercial-proposal-engine-plugin
+```
+
+Verify that the plugin is active and adheres to the strict official schema:
+
+```bash
+agy plugin list
+agy plugin validate --strict ./commercial-proposal-engine-plugin
+```
 
 ---
 
@@ -25,6 +43,8 @@ In enterprise software engineering, commercial proposals typically fail at one o
 The **Commercial Proposal Engine Plugin** (`commercial-proposal-engine-plugin`, v1.0.0) bridges the gap between the upstream **Discovery-to-Proposal Engine** (`DOSSIE_TECNICO_PRE_PROPOSTA.md`) and the downstream **Contract Technical Annexes Engine** (`ANEXO_TECNICO_MESTRE_CONTRATO.md`).
 
 It synthesizes complex technical reality into a single, cohesive narrative across **6 Executive Pillars** and concludes with a consultative **13-Row Contractual Mirror Table** that anchors every legal and operational parameter ahead of contract execution.
+
+---
 
 ---
 
@@ -41,28 +61,6 @@ It synthesizes complex technical reality into a single, cohesive narrative acros
 | **Anexo Executivo: Quadro de Espelhamento** | **13-Row Consultative Alignment Matrix** bridging proposal conditions directly to Contract Annexes 1–5 in a partnership tone. | General Counsel / Head of Procurement | **Anexos Técnicos 1 a 5 (Consolidação)** |
 
 ---
-
-## 3. Directory Structure (100% Antigravity Compliant)
-
-```text
-commercial-proposal-engine-plugin/
-├── plugin.json
-├── README.md
-├── LICENSE
-├── .gitignore
-├── rules/
-│   ├── commercial-persuasion-standards.md
-│   └── contractual-anchoring-safeguards.md
-├── skills/
-│   └── commercial-proposal-orchestrator/
-│       ├── SKILL.md
-│       └── templates/
-│           └── PROPOSTA_COMERCIAL_EXECUTIVA.template.md
-└── agents/
-    ├── proposal-ingestion-planner.md
-    ├── executive-proposal-generator.md
-    └── deal-redteam-critic.md
-```
 
 ---
 
@@ -96,38 +94,63 @@ flowchart TD
 
 ---
 
-## 5. Installation & Usage
+---
 
-### 5.1 Global Installation
+## What's Included (Component Catalog)
 
-```bash
-mkdir -p ~/.gemini/config/plugins/commercial-proposal-engine-plugin
-cp -r ./* ~/.gemini/config/plugins/commercial-proposal-engine-plugin/
-```
+### Contextual Rules (`rules/`)
+Automatically loaded to govern and protect project contexts:
+- **[`commercial-persuasion-standards.md`](rules/commercial-persuasion-standards.md)**: Aplicar exclusivamente durante o planejamento, redação ou revisão crítica (Red Team) de propostas comerciais executivas de engenharia de software.
+- **[`contractual-anchoring-safeguards.md`](rules/contractual-anchoring-safeguards.md)**: Aplicar exclusivamente durante o planejamento, redação ou revisão crítica (Red Team) de propostas comerciais executivas de engenharia de software para ancorar salvaguardas contratuais.
 
-### 5.2 Slash Command Invocation
+### Procedural Skills (`skills/`)
+On-demand actionable workflows and runbooks:
+- **[`/commercial-proposal-orchestrator`](skills/commercial-proposal-orchestrator/SKILL.md)**: Orquestra o pipeline agêntico em loop Generator-Critic (Reflexion) para transformar o dossiê técnico de pré-venda (DOSSIE_TECNICO_PRE_PROPOSTA.md) em uma Proposta Comercial e Técnica Executiva de alto impacto (PROPOSTA_COMERCIAL_EXECUTIVA.md), estruturada nos 6 Pilares Executivos e pré-alinhada com os 5 Anexos Técnicos Contratuais.
 
-```bash
-/commercial-proposal-orchestrator [dossier_path] [output_dir]
-```
-
-*Examples:*
-```bash
-# Standard execution with default paths:
-/commercial-proposal-orchestrator DOSSIE_TECNICO_PRE_PROPOSTA.md ./propostas_comerciais
-
-# Custom path invocation:
-/commercial-proposal-orchestrator ./docs/discovery/DOSSIE_TECNICO_PROJETO_ALPHA.md ./output/proposta_alpha
-```
-
-Or via natural language conversation:
-
-> *"Gere a proposta comercial executiva a partir do dossiê DOSSIE_TECNICO_PRE_PROPOSTA.md"*
+### Specialized Subagents (`agents/`)
+Autonomous personas delegated for in-depth execution:
+- **[`deal-redteam-critic`](agents/deal-redteam-critic.md)**: Atua como Critic no loop Reflexion. Audita a minuta da proposta sob 4 lentes (Persuasão C-Level, Rigor CTO/TCO, Ancoragem dos 5 Anexos Contratuais e Higiene de Output), emitindo parecer estruturado em .scratch/redteam_critique.json.
+- **[`executive-proposal-generator`](agents/executive-proposal-generator.md)**: Atua como Generator no loop Reflexion. Redige a Proposta Comercial Executiva completa em voz única e fluida nos 6 pilares e aplica os refinamentos exigidos pelo Deal Red Team Critic.
+- **[`proposal-ingestion-planner`](agents/proposal-ingestion-planner.md)**: Analisa o dossiê técnico de pré-venda, valida premissas estruturais, aplica fallbacks comerciais inteligentes e estrutura o plano narrativo da proposta em .scratch/proposal_narrative_plan.json.
 
 ---
 
-## 6. License & Credits
+## Directory Hierarchy
 
-* **Author:** Engineering Architecture Office / HalcyonTech-LTDA
-* **Organization:** [HalcyonTech-LTDA](https://github.com/HalcyonTech-LTDA)
-* **License:** [MIT](./LICENSE)
+```text
+commercial-proposal-engine-plugin/
+├── plugin.json              # Official Antigravity manifest (schema v1)
+├── LICENSE                  # MIT License (Copyright 2026 HalcyonTech LTDA)
+├── .gitignore               # System ignores & installed_version.json exclusions
+├── .gitattributes           # Deterministic line endings (* text=auto eol=lf)
+├── README.md                # Golden Standard documentation & runbook
+├── assets/
+│   └── logo.svg             # Official Halcyon Tech corporate vector symbol
+├── rules/                   # Contextual rules discovered automatically
+│   └── commercial-persuasion-standards.md
+│   └── contractual-anchoring-safeguards.md
+├── skills/                  # Actionable procedural skills (Progressive Disclosure)
+│   └── commercial-proposal-orchestrator/
+│       └── SKILL.md
+└── agents/                  # Specialized autonomous subagents
+    └── deal-redteam-critic.md
+    └── executive-proposal-generator.md
+    └── proposal-ingestion-planner.md
+```
+
+---
+
+## 💡 Prompt Recipes & Use Cases
+
+```markdown
+- "Execute o pipeline multi-agente de proposta comercial a partir do dossiê técnico"
+- "Audite a viabilidade comercial, margem de risco e premissas contratuais da proposta"
+- "Estruture a proposta comercial consolidada com marcos de faturamento e cronograma"
+```
+
+---
+
+## 📄 License & Corporate Governance
+
+Distributed under the **MIT License**. Copyright (c) 2026 **HalcyonTech LTDA**.  
+Engineered with precision and excellence by [Halcyon Tech](https://github.com/HalcyonTech-LTDA).
